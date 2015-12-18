@@ -1,5 +1,5 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This an assignment from Coursera.
+## Two functions are shown below, which will take advantage of the scoping rules of the R language and create an object which will reduce the time-consuming conmputations.
 
 ## This function creates a special "matrix" object that can cache its inverse.
 
@@ -7,6 +7,7 @@ makeCacheMatrix <- function(x = matrix()) {
   s <- NULL
   set <- function(y){
         x <<- y
+        # <<- is the gloal definition of values
         s <<- NULL
   }
   get <- function() x
